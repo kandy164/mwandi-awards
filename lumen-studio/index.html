@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vote for the Best Content Creator in Mwandi District." />
+  <title>Best Content Creator in Mwandi District</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles%20(1).css" />
+</head>
+<body>
+  <div class="aurora aurora-one"></div><div class="aurora aurora-two"></div><div class="aurora aurora-three"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top"><span class="brand-symbol">✦</span><span>Mwandi <b>Media Awards</b></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="#nominees">Nominees</a><a href="#how-to-vote">How to vote</a><a href="#about">About</a>
+      <button class="creator-link" type="button" id="creator-login-open">Creator access <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Mwandi District · 2026</p>
+        <h1>Best Content<br />Creator in <strong>Mwandi</strong><i>.</i></h1>
+        <p class="hero-text">Celebrating the voices, stories and creative energy shaping our community. Choose the creator whose work keeps you watching, learning and inspired.</p>
+        <div class="hero-actions"><a class="button button-electric" href="#nominees">Cast your vote <span>↘</span></a><a class="text-link" href="#how-to-vote">See how it works <span>↓</span></a></div>
+      </div>
+      <div class="hero-orbit reveal" aria-label="Abstract aurora artwork" role="img">
+        <div class="orbit-glow"></div><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-core"><span>YOUR<br /><em>VOICE</em><br />MATTERS</span></div>
+        <span class="spark spark-one">✦</span><span class="spark spark-two">✦</span><span class="spark spark-three">✦</span><span class="orbit-caption">Local talent · Loud impact</span>
+      </div>
+    </section>
+
+    <section class="count-band"><div class="section-shell count-inner"><span class="pulse-dot"></span><strong id="vote-count">0</strong><span>community votes recorded in this browser</span><span class="count-divider"></span> <h2><span>Voting is now open</span></h2></div></section>
+
+    <section class="nominees section-shell" id="nominees">
+      <div class="section-heading reveal"><div><p class="eyebrow"><span></span> Meet the nominees</p><h2>Every story<br />deserves a <em>spotlight.</em></h2></div><p class="section-intro">Browse the nominees below and tap the electric button to support your favourite creator. One vote per browser in this demo.</p></div>
+      <div class="nominee-grid" id="nominee-grid"></div>
+    </section>
+
+    <section class="how-to-vote section-shell" id="how-to-vote">
+      <div class="how-intro reveal"><p class="eyebrow"><span></span> Simple & fair</p><h2>Make your<br /><em>choice count.</em></h2></div>
+      <div class="steps"><div class="step reveal"><span>01</span><h3>Choose</h3><p>Look through the nominee profiles and find the creator whose work stands out to you.</p></div><div class="step reveal"><span>02</span><h3>Tap to vote</h3><p>Press the glowing vote button. You can cast one vote from each browser.</p></div><div class="step reveal"><span>03</span><h3>Share the love</h3><p>Tell your friends in Mwandi to support the local creator they believe in.</p></div></div>
+    </section>
+
+    <section class="about section-shell" id="about"><div class="about-badge reveal"><div class="badge-star">✦</div><strong>MWANDI<br /><span>2026</span></strong><small>COMMUNITY<br />CHOICE</small></div><div class="about-copy reveal"><p class="eyebrow"><span></span> Why this matters</p><h2>Local talent.<br /><em>Real impact.</em></h2><p>This is a celebration of the people using creativity to tell our stories, connect our communities and put Mwandi on the map. Your vote is a small action with a big message: we see you.</p></div></section>
+
+    <section class="final-cta section-shell reveal"><div><p class="eyebrow"><span></span> The choice is yours</p><h2>Who gets your<br /><em>golden vote?</em></h2></div><a class="button button-electric" href="#nominees">Vote now <span>↗</span></a></section>
+  </main>
+
+  <footer class="site-footer section-shell"><a class="brand" href="#top"><span class="brand-symbol">✦</span><span>Mwandi <b>Media Awards</b></span></a><p>Celebrating creativity in Mwandi District.</p><button class="footer-creator" type="button" id="creator-login-open-footer">Creator dashboard ↗</button></footer>
+
+  <div class="modal" id="vote-modal" aria-hidden="true"><div class="modal-card"><button class="modal-close" data-close-modal aria-label="Close">×</button><p class="eyebrow"><span></span> Confirm your choice</p><h2>Vote for<br /><em id="selected-name">this creator</em></h2><p>Your vote is recorded on this browser. Ready to make it count?</p><div class="modal-actions"><button class="button button-quiet" data-close-modal>Go back</button><button class="button button-electric" id="confirm-vote">Confirm vote <span>↗</span></button></div></div></div>
+  <div class="modal" id="creator-modal" aria-hidden="true"><div class="modal-card"><button class="modal-close" data-close-modal aria-label="Close">×</button><p class="eyebrow"><span></span> Private creator area</p><h2>See the<br /><em>results.</em></h2><p>Enter your creator PIN to view the vote totals saved on this browser.</p><form id="creator-form"><label for="creator-pin">Creator PIN</label><input id="creator-pin" type="password" inputmode="numeric" placeholder="Enter PIN" required /><button class="button button-electric" type="submit">Unlock dashboard <span>↗</span></button><p class="form-message" id="creator-message" role="status"></p></form><div class="results-panel" id="results-panel" hidden><h3>Current totals</h3><div id="results-list"></div><button class="button button-quiet" id="reset-votes" type="button">Reset demo votes</button></div></div></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
