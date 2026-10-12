@@ -21,7 +21,7 @@ const adminAuth = getAuth(adminApp);
 const adminDb = getFirestore(adminApp);
 
 const nominees = [
-  { id: 'nominee-01', name: 'let it be light', category: 'Content Creator', initials: '01', photo: 'nominee-01.jpg' },
+  { id: 'nominee-01', name: 'mwandi western filmz', category: 'Content Creator', initials: '01', photo: 'nominee-01.jpg' },
   { id: 'nominee-02', name: 'kandy jr', category: 'Content Creator', initials: '02', photo: 'nominee-02.jpg' },
   { id: 'nominee-03', name: 'bakaziba cwani', category: 'Content Creator', initials: '03', photo: 'nominee-03.jpg' },
   { id: 'nominee-04', name: 'we dont force influence', category: 'Content Creator', initials: '04', photo: 'nominee-04.jpg' },
